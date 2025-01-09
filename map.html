@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map and filter methods</title>
+</head>
+<body>
+    <script>
+        console.log("Task 1-Double each number in an array")
+        let arr1=[2,3,4]
+        console.log("original array",arr1)
+        newarr1=arr1.map((v,i,a)=>{
+            return v+v
+        })
+        console.log("new array values are doubles",newarr1)
+
+        console.log("Task 2-Create a new array with each element squared")
+        let arr2=[12,20,25]
+        console.log("array",arr2)
+        newarr2=arr2.map((v,i,a)=>{
+            return v*v
+        })
+        console.log("squared array",newarr2);
+
+        console.log("Task 3-Filter out even numbers")
+        let arr3=[2,5,9,12,13,16,17,20]
+        console.log("original array",arr3);
+        
+        newarr3=arr3.filter((v,i,a)=>{
+            return v%2!==0
+        },0)
+        console.log("new array contains odd numbers",newarr3);
+
+        console.log("Task 4-Filter out words longer than 5 characters");
+        let arr4=['apple','grapes','kiwi','mango','banana','plum']
+        console.log("array list",arr4)
+        newarr4=arr4.filter((v,i,a)=>{
+            return v.length<=5
+        },0)
+        console.log("new array with less than 5 chars in a word",newarr4);
+
+
+
+
+        
+        
+
+
+        
+        
+
+
+
+    </script>
+</body>
+</html>
